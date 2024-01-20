@@ -1,11 +1,12 @@
+$navbar-toggler-focus-width: 0;
+$navbar-toggler-transition: none;
+$navbar-light-toggler-border-color: none;
+$navbar-dark-toggler-border-color: none;
+
 // Colour Theme
-$primary: $blue !default;
-$secondary: $gray-600 !default;
-$success: $green !default;
-$info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
-$light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: #00050b;
+$light: #f7f6f2;
+$primary: #f18603;
+$secondary: #013d42;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
