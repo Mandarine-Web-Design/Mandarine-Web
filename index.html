@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/font-awesome.css" />
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/styles.css" />
-<link rel="icon" href="./assets/imgs/favicon.png" type="image/png" />
+<link rel="icon" href="./assets/logos/favicon.png" type="image/png" />
 <title>Mandarine Web Design</title>
 </head>
 
@@ -13,10 +13,9 @@
       <!-- logo -->
       <div class="navbar-brand d-flex align-items-center">
         <a class="navbar-brand d-flex align-items-center" style="text-decoration: none;" href="index.html">
-          <picture>
-            <source srcset="assets/imgs/logo-colour.webp" type="image/webp">
-            <img src="assets/imgs/logo-colour.png" alt="Logo Description" width="160">
-          </picture>
+          <img srcset="assets/logos/logo-colour.png 1x, assets/logos/logo-colour@2x.png 2x, assets/logos/logo-colour@3x.png 3x,
+          assets/logos/logo-colour.webp 1x, assets/logos/logo-colour@2x.webp 2x, assets/logos/logo-colour@3x.webp 3x"
+            src="assets/logos/logo-colour.png" alt="Logo Description" width="160" />
         </a>
       </div>
       <!-- Nav -->
@@ -35,7 +34,7 @@
             <a href="#prices" class="nav-link">PRICES</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="about.html" class="nav-link">ABOUT US</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">CONTACT</a>
@@ -49,12 +48,12 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero" style="margin-top: 126.2px;">
+  <section class="hero" style="margin-top: 108.4px;">
     <div class="container-fluid p-0">
       <div class="hero-bg">
         <div class="overlay"></div>
-        <div class="row on-top">
-          <div class="col-md-12">
+        <div class="row on-top d-flex justify-content-center">
+          <div class="col-md-12" style="max-width: 1240px;">
             <div class="text-container d-flex flex-column justify-content-end align-items-end">
               <h1 class="text-light fw-bolder text-end" style="font-size: 48px;">Web Design in<br />Edinburgh</h1>
               <p class="book-text" style="font-size: 18px;">We launch your website from <span
@@ -67,19 +66,21 @@
   </section>
 
   <!-- Price Cards -->
-  <div class="section cards my-5">
+  <div class="price-tag" id="prices"></div>
+  <section class="cards my-5 mb-5">
     <div class="container pt-6">
       <div class="div text-container pt-5 pb-3 d-flex align-items-start justify-content-center">
-        <div class="h2">Popular Web Packages</div>
+        <div class="h2 section-header">Popular Web Packages</div>
       </div>
       <div class="row">
         <!-- Card 1 -->
         <div class="col-md-4">
           <div class="card text-light border-0">
-            <div class="card-bg" style="background-image: url('assets/imgs/pexels-fauxels-3184162.jpg');">
+            <div class="card-bg">
               <div class="overlay rounded-3"></div>
               <div class="card-body on-top text-center rounded-3">
                 <div class="position-absolute w-100 top-0 start-0 fw-bold bg-primary text-dark py-1 rounded-top-3">One
+                  Time
                   Payment
                 </div>
                 <h3 class="card-title mt-5">Basic Plan</h3>
@@ -100,11 +101,12 @@
 
         <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="card text-light">
-            <div class="card-bg" style="background-image: url('assets/imgs/pexels-fauxels-3184162.jpg');">
-              <div class="overlay"></div>
-              <div class="card-body on-top text-center">
-                <div class="position-absolute w-100 top-0 start-0 fw-bold bg-primary text-dark py-1">Instalments
+          <div class="card text-light border-0">
+            <div class="card-bg">
+              <div class="overlay rounded-3"></div>
+              <div class="card-body on-top text-center rounded-3">
+                <div class="position-absolute w-100 top-0 start-0 fw-bold bg-primary text-dark py-1 rounded-top-3">
+                  Instalments
                   available
                 </div>
                 <h3 class="card-title mt-5">Business Plan</h3>
@@ -129,11 +131,11 @@
 
         <!-- Card 3 -->
         <div class="col-md-4">
-          <div class="card text-light">
-            <div class="card-bg" style="background-image: url('assets/imgs/pexels-fauxels-3184162.jpg');">
-              <div class="overlay"></div>
-              <div class="card-body on-top text-center">
-                <div class="position-absolute w-100 top-0 start-0 fw-bold bg-primary text-dark py-1">
+          <div class="card text-light border-0">
+            <div class="card-bg">
+              <div class="overlay rounded-3"></div>
+              <div class="card-body on-top text-center rounded-3">
+                <div class="position-absolute w-100 top-0 start-0 fw-bold bg-primary text-dark py-1 rounded-top-3">
                   Instalments available
                 </div>
                 <h3 class="card-title mt-5">E-commerce Plan</h3>
@@ -155,10 +157,170 @@
             </div>
           </div>
         </div>
+        <div class="text-container text-center">Optional hosting and maintenance packages available from £32 a month
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div class="services-tag" id="services"></div>
+  <!-- Services -->
+  <section class="services my-5 mb-5 pt-5">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <!-- Web design -->
+      <div class="web-design row  my-5">
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <div class="col-md-6 image-container">
+          <div class="h2 text-container">Web Design & Development</div>
+
+          <picture>
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" type="image/jpeg"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.jpg" type="image/jpeg"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.jpg" type="image/jpeg"
+              media="(min-width: 1440px)" />
+
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.webp" type="image/webp"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.webp" type="image/webp"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.webp" type="image/webp"
+              media="(min-width: 1440px)" />
+
+            <img src="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" alt="Houses near a river"
+              style="width: 100%; height: auto;">
+          </picture>
+
+        </div>
+        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+          blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
+          totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
+          alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
+          blanditiis unde pariatur ipsum amet eveniet. Voluptatibus quisquam laudantium natus maxime itaque adipisci. Ad
+          voluptate explicabo quod assumenda repudiandae ea deserunt totam quidem tempora expedita cupiditate, corrupti
+          laudantium quos culpa libero odio laborum minima? Ipsa placeat accusantium ratione alias eum, illum hic saepe,
+          tenetur quo deserunt blanditiis vitae illo iste facere, quod labore magnam quis quas aperiam asperiores
+          aspernatur! Sed harum modi quam rem qui.</div>
+      </div>
+
+      <!-- SEO & Optimization -->
+      <div class="seo-optimization d-flex flex-row-reverse row my-5">
+
+        <div class="col-md-6 image-container">
+          <div class="h2 text-container">SEO & Optimization</div>
+
+          <picture>
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" type="image/jpeg"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.jpg" type="image/jpeg"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.jpg" type="image/jpeg"
+              media="(min-width: 1440px)" />
+
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.webp" type="image/webp"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.webp" type="image/webp"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.webp" type="image/webp"
+              media="(min-width: 1440px)" />
+
+            <img src="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" alt="Houses near a river"
+              style="width: 100%; height: auto;">
+          </picture>
+
+        </div>
+        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+          blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
+          totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
+          alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
+          blanditiis unde pariatur ipsum amet eveniet. Voluptatibus quisquam laudantium natus maxime itaque adipisci. Ad
+          voluptate explicabo quod assumenda repudiandae ea deserunt totam quidem tempora expedita cupiditate, corrupti
+          laudantium quos culpa libero odio laborum minima? Ipsa placeat accusantium ratione alias eum, illum hic saepe,
+          tenetur quo deserunt blanditiis vitae illo iste facere, quod labore magnam quis quas aperiam asperiores
+          aspernatur! Sed harum modi quam rem qui.</div>
+      </div>
+
+      <!-- Other Services -->
+      <div class="seo-optimization d-flex row my-5">
+
+        <div class="col-md-6 image-container">
+          <div class="h2 text-container">Additional Services</div>
+
+          <picture>
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" type="image/jpeg"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.jpg" type="image/jpeg"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.jpg" type="image/jpeg"
+              media="(min-width: 1440px)" />
+
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234.webp" type="image/webp"
+              media="(max-width: 767px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@2x.webp" type="image/webp"
+              media="(min-width: 768px) and (max-width: 1439px)" />
+            <source srcset="./assets/imgs/pexels-phil-mcintosh-18394234@3x.webp" type="image/webp"
+              media="(min-width: 1440px)" />
+
+            <img src="./assets/imgs/pexels-phil-mcintosh-18394234.jpg" alt="Houses near a river"
+              style="width: 100%; height: auto;">
+          </picture>
+
+        </div>
+        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+          blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
+          totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
+          alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
+          blanditiis unde pariatur ipsum amet eveniet. Voluptatibus quisquam laudantium natus maxime itaque adipisci. Ad
+          voluptate explicabo quod assumenda repudiandae ea deserunt totam quidem tempora expedita cupiditate, corrupti
+          laudantium quos culpa libero odio laborum minima? Ipsa placeat accusantium ratione alias eum, illum hic saepe,
+          tenetur quo deserunt blanditiis vitae illo iste facere, quod labore magnam quis quas aperiam asperiores
+          aspernatur! Sed harum modi quam rem qui.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer bg-dark mt-5">
+    <div class="container-fluid ">
+      <div class="row mt-5">
+        <div class="col text-secondary " style="font-size: 12px;">
+          <p>&copy; <span id="currentYear"></span> L.M. Douglas - <a class='text-secondary'
+              style="text-decoration: none;" href="terms.html">Terms & Conditions</a> - <a
+              href="https://victorblancoweb.com" target="_blank" class="text-decoration-none text-light">Website by
+              Mandarinde Web Design <img src="assets/logos/favicon.png" style="width: 18px;" /> </a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookie Consent -->
+  <div id="consentBox">
+
+    <div id="consentContent">
+      <header id="consentHeader">
+        Cookies: The choice is yours
+      </header>
+      <p>
+        We use cookies to make our site work well
+        for you and so we can continually improve it.
+        <br>The cookies that are necessary to
+        keep the site functioning are always on
+      </p>
+      <div class="buttons">
+        <button class="consentButton">
+          Accept Cookies
+        </button>
+        <button class="rejectButton">
+          Reject
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
