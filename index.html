@@ -1,9 +1,13 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/font-awesome.css" />
-<link rel="stylesheet" href="css/bootstrap.css" />
-<link rel="stylesheet" href="css/styles.css" />
-<link rel="icon" href="./assets/logos/favicon.png" type="image/png" />
-<title>Mandarine Web Design</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="./assets/logos/favicon.png" type="image/png" />
+  <title>Mandarine Web Design</title>
 </head>
 
 <body>
@@ -50,18 +54,16 @@
   <!-- Hero -->
   <section class="hero" style="margin-top: 108.4px;">
     <div class="container-fluid p-0">
-      <div class="hero-bg">
+      <div class="hero-bg d-flex justify-content-end">
         <div class="overlay"></div>
-        <div class="row on-top d-flex justify-content-center">
-          <div class="col-md-12" style="max-width: 1240px;">
-            <div class="text-container d-flex flex-column justify-content-end align-items-end">
-              <h1 class="text-light fw-bolder text-end" style="font-size: 48px;">Web Design in<br />Edinburgh</h1>
-              <p class="book-text" style="font-size: 18px;">We launch your website from <span
-                  class="text-primary">£495</span></p>
-            </div>
-          </div>
+        <div class="text-container on-top d-flex flex-column justify-content-end align-items-end">
+          <h1 class="text-light fw-bolder text-end" style="font-size: 48px;">Web Design in<br />Edinburgh</h1>
+          <p class="book-text" style="font-size: 18px;">We launch your website from <span
+              class="text-primary">£495</span></p>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </section>
 
@@ -98,7 +100,6 @@
             </div>
           </div>
         </div>
-
         <!-- Card 2 -->
         <div class="col-md-4">
           <div class="card text-light border-0">
@@ -128,7 +129,6 @@
             </div>
           </div>
         </div>
-
         <!-- Card 3 -->
         <div class="col-md-4">
           <div class="card text-light border-0">
@@ -193,7 +193,9 @@
           </picture>
 
         </div>
-        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+        <div class="col-md-6 text-container d-flex align-items-center">Lorem ipsum dolor sit amet
+          consectetur
+          adipisicing elit. Eos fugiat eius
           blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
           totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
           alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
@@ -230,7 +232,8 @@
           </picture>
 
         </div>
-        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+        <div class="col-md-6 text-container d-flex align-items-center">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eos fugiat eius
           blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
           totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
           alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
@@ -267,7 +270,8 @@
           </picture>
 
         </div>
-        <div class="col-md-6 text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat eius
+        <div class="col-md-6 text-container d-flex align-items-center">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eos fugiat eius
           blanditiis maxime, magnam placeat corrupti ab impedit accusamus facere? Sit maiores velit, doloribus nisi
           totam corrupti obcaecati tenetur quam! Eligendi sunt quis sapiente natus tempora at sed sint, quae assumenda
           alias nam aspernatur blanditiis cumque similique nobis soluta. Nostrum tenetur eos delectus ut officia,
@@ -283,41 +287,36 @@
 
   <!-- Footer -->
   <section class="footer bg-dark mt-5">
-    <div class="container-fluid ">
-      <div class="row mt-5">
-        <div class="col text-secondary " style="font-size: 12px;">
-          <p>&copy; <span id="currentYear"></span> L.M. Douglas - <a class='text-secondary'
-              style="text-decoration: none;" href="terms.html">Terms & Conditions</a> - <a
-              href="https://victorblancoweb.com" target="_blank" class="text-decoration-none text-light">Website by
-              Mandarinde Web Design <img src="assets/logos/favicon.png" style="width: 18px;" /> </a></p>
-        </div>
+    <div class="footer-main d-flex align-items-center justify-content-evenly py-5">
+      <div class="text-container">a</div>
+      <img src="assets/logos/logo-colour.png" width="140" />
+    </div>
+    <div class="container-fluid copy bg-dark">
+      <div class="row text-center">
+        <div class="text-light">Website by
+          Mandarinde Web Design - <span class="mx-md-1" id="currentYear"></span> - <a class="text-light"
+            href="terms.html">Terms &
+            Conditions</a></div>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Cookie Consent -->
+  <!-- Cookie Consent
+  <div id="cookie-overlay"></div>
   <div id="consentBox">
-
-    <div id="consentContent">
-      <header id="consentHeader">
-        Cookies: The choice is yours
-      </header>
-      <p>
-        We use cookies to make our site work well
-        for you and so we can continually improve it.
-        <br>The cookies that are necessary to
-        keep the site functioning are always on
-      </p>
+    <div id="consentContent" class="d-flex align-items-center justify-content-evenly">
+      <div class="text-start py-4" style="max-width: 70vw;">
+        We use cookies to make our site work well for you and so we can continually improve it.
+        The cookies are necessary to keep the site functioning and collect anonymous usage stadistics
+      </div>
       <div class="buttons">
-        <button class="consentButton">
-          Accept Cookies
-        </button>
-        <button class="rejectButton">
-          Reject
+        <button class="consentButton btn btn-primary">
+          I Acept
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
